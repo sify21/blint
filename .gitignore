@@ -139,3 +139,5 @@ reports/
 out.json
 requirements-dist.txt
 .mise.toml
+
+*.swp
