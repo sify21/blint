@@ -8,6 +8,7 @@ output=sca-binary
 
 rm -rvf dist
 printf "${Yellow}"
+poetry self add poetry-plugin-export
 poetry export -o requirements.txt --without-hashes
 poetry run pip wheel --wheel-dir=${output} -r requirements.txt
 printf "${Green}"
